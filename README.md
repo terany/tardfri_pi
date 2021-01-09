@@ -57,9 +57,9 @@ The <username> and <preshared_key> is used for furhter controls the Tradfri devi
   
 ### Control device
 * *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"\<code\>":[{"<\code\>":<value>}]}' "coaps://<gateway_ip>:5684/15001/<device_id>"*
-* e.g. turn the light on * *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"3311":[{"5850":1}]}' "coaps://<gateway_ip>:5684/15001/<device_id>"*
-* e.g. turn the light off * *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"3311":[{"5850":0}]}' "coaps://<gateway_ip>:5684/15001/<device_id>"*
+* e.g. turn the light on *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"3311":[{"5850":1}]}' "coaps://<gateway_ip>:5684/15001/<device_id>"*
+* e.g. turn the light off *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"3311":[{"5850":0}]}' "coaps://<gateway_ip>:5684/15001/<device_id>"*
 
 ### Control group
-* similar to control device but endpoints to 15004, i.e. * *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"\<code\>":[{"<\code\>":<value>}]}' "coaps://<gateway_ip>:5684/15004/<device_group>"*
+* similar to control device but endpoints to 15004, i.e. *coap-client -m put -u "<username>" -k "<preshared_key>" -e '{"\<code\>":[{"<\code\>":<value>}]}' "coaps://<gateway_ip>:5684/15004/<device_group>"*
 
