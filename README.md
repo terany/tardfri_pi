@@ -52,7 +52,7 @@ The <username> and <preshared_key> is used for furhter controls the Tradfri devi
   
 ### Get device status
 * *coap-client -m get -u "<username>" -k "<preshared_key>" "coaps://<gateway_ip>:5684/15001/65538"*
-* response: *[\<code\>, \<value\> ....]
+* response: *[\<code\>, \<value\> ....]*
 * for light bud, the message returns, *{"9001":"TRADFRI bulb","9003":65539,"9002":1607509104,"9020":1610157124,"9054":0,"9019":1,"3":{"0":"IKEA of Sweden","6":1,"1":"TRADFRI bulb E27 WS opal 980lm","2":"","3":"2.3.050"},"5750":2,"3311":[{"5850":0,"5851":91,"5717":0,"5711":250,"5709":24841,"5710":24593,"5706":"f5faf6","9003":0}]}*
   
 ### Control device
